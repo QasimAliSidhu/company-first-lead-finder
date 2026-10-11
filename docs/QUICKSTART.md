@@ -4,7 +4,7 @@
 
 Clone this repository and open a terminal in its root. All examples below use fictional inputs.
 
-For the offline scoring example, install `PyYAML`. The full collectors and UI need the dependencies listed in the README. The offline example makes no network requests.
+The offline scoring example uses the Python standard library. The full collectors and UI need the dependencies listed in the README. The offline example makes no network requests.
 
 ```console
 python examples/offline_score.py
