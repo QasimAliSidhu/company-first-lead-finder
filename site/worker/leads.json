@@ -1,0 +1,61 @@
+{
+  "mode": "sample-data",
+  "collected_at": "2026-10-11T00:00:00Z",
+  "companies": [
+    {
+      "company_name": "Atlas Support (fictional)",
+      "domain": "atlas-support.example",
+      "website": "https://atlas-support.example/",
+      "category": "managed IT services",
+      "location": "Demo location",
+      "public_emails": [
+        "careers@atlas-support.example"
+      ],
+      "technical_support_score": 44,
+      "priority": "HIGH",
+      "support_signals": [
+        "managed_it",
+        "software",
+        "technical_support",
+        "support_team",
+        "support_24_7",
+        "remote_support",
+        "help_center",
+        "knowledge_base",
+        "support_portal",
+        "api_docs",
+        "remote_team"
+      ],
+      "score_breakdown": {
+        "managed_it": 5,
+        "software": 5,
+        "technical_support": 5,
+        "support_team": 4,
+        "support_24_7": 3,
+        "remote_support": 3,
+        "help_center": 3,
+        "knowledge_base": 3,
+        "support_portal": 3,
+        "api_docs": 2,
+        "remote_team": 3,
+        "recruiting_email": 5
+      },
+      "signal_evidence": {},
+      "email_evidence": {},
+      "notes": [
+        "Fictional sample data"
+      ],
+      "discovery_source": "sample-data",
+      "source_url": "https://atlas-support.example/about",
+      "phone": "",
+      "social_links": {},
+      "collected_at": "2026-10-11T00:00:00Z"
+    }
+  ],
+  "categories": [
+    "managed IT services"
+  ],
+  "blocked_domains": [],
+  "source_summary": "Fictional example",
+  "discovery_note": "Sample data only. Run your own collector for actual company records."
+}

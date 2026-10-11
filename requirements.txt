@@ -1,0 +1,6 @@
+requests>=2.32,<3
+beautifulsoup4>=4.13,<5
+lxml>=5.3,<7
+tldextract>=5.1,<6
+Scrapy>=2.13,<3
+ddgs>=9,<10

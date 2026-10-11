@@ -1,0 +1,2 @@
+{category} {location} -jobs -indeed -glassdoor -linkedin -ziprecruiter
+{category} {location} contact -jobs -indeed -glassdoor -linkedin -ziprecruiter

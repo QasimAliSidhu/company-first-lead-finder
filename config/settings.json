@@ -1,0 +1,53 @@
+{
+  "openserp": {
+    "base_url": "http://127.0.0.1:7000",
+    "engines": [
+      "google",
+      "duckduckgo",
+      "bing"
+    ],
+    "timeout_seconds": 100,
+    "results_per_query": 30,
+    "query_delay_seconds": 3,
+    "search_mode": "all"
+  },
+  "maps": {
+    "depth": 3,
+    "concurrency": 1,
+    "extract_emails": true,
+    "exit_on_inactivity": "2m",
+    "timeout_seconds": 1800,
+    "pages_per_browser": 2
+  },
+  "crawl": {
+    "max_pages": 10,
+    "max_company_seconds": 100,
+    "timeout_seconds": 12,
+    "retries": 1,
+    "delay_seconds": 1,
+    "max_bytes": 2000000,
+    "concurrency": 2,
+    "respect_robots": true,
+    "user_agent": "CompanyProspectResearch/1.0 (public business contact research; limited crawling)"
+  },
+  "output": "data/technical_support_leads.csv",
+  "max_leads": 150,
+  "industry_patterns": {
+    "managed IT services": "managed|msp|IT services|IT support",
+    "cybersecurity companies": "cyber.?security|security",
+    "cloud software companies": "cloud|software|saas",
+    "SaaS companies": "saas|software|platform",
+    "IT support companies": "IT support|managed|help desk|IT services"
+  },
+  "industry_search_terms": {
+    "managed IT services": "managed IT services",
+    "cybersecurity companies": "cybersecurity services",
+    "cloud software companies": "cloud software",
+    "SaaS companies": "SaaS software",
+    "IT support companies": "IT support services"
+  },
+  "directories": {
+    "profiles_per_query": 15,
+    "timeout_seconds": 300
+  }
+}

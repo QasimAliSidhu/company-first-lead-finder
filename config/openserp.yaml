@@ -1,0 +1,17 @@
+server:
+  host: 127.0.0.1
+  port: 7000
+  insecure: false
+app:
+  browser_path: "C:/Program Files/Google/Chrome/Application/chrome.exe"
+  head: false
+  timeout: 25
+  max_processes: 2
+  log_level: warn
+  idle_ttl: 5m
+resilience:
+  max_retries: 1
+  allow_endpoint_fallback: false
+captcha:
+  solver_enabled: false
+

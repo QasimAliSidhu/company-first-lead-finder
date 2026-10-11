@@ -1,0 +1,23 @@
+{
+  "weights": {
+    "managed_it": 5,
+    "software": 5,
+    "technical_support": 5,
+    "support_team": 4,
+    "support_24_7": 3,
+    "remote_support": 3,
+    "help_center": 3,
+    "knowledge_base": 3,
+    "support_portal": 3,
+    "api_docs": 2,
+    "careers_page": 2,
+    "remote_team": 3,
+    "technical_support_vacancy": 5,
+    "recruiting_email": 5,
+    "general_email": 2
+  },
+  "thresholds": {
+    "HIGH": 25,
+    "MEDIUM": 12
+  }
+}

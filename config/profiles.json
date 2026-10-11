@@ -1,0 +1,10 @@
+{
+  "expanded": {
+    "locations": ["Austin TX", "Dallas TX", "Houston TX", "Miami FL", "Atlanta GA", "Denver CO", "Seattle WA", "Phoenix AZ"],
+    "categories": ["managed IT services", "SaaS companies", "IT support companies", "cybersecurity companies", "cloud software companies", "web hosting company", "VoIP company", "IT consulting company", "outsourced technical support", "customer support outsourcing"],
+    "max_leads": 250,
+    "results_per_query": 30,
+    "maps_depth": 3,
+    "maps_timeout_seconds": 14400
+  }
+}
