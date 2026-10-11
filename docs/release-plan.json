@@ -1,0 +1,20 @@
+{
+  "tag": "v0.1.0-demo",
+  "title": "Company-first Lead Finder \u2014 public workflow demo",
+  "publish_at_utc": "2026-10-12T13:47:00+00:00",
+  "deadline_utc": "2026-10-12T18:59:59+00:00",
+  "assets": [
+    {
+      "path": "docs/demo.gif",
+      "name": "demo.gif",
+      "content_type": "image/gif",
+      "sha256": "d66d9d02fcd85bfa799bf3763c5c24fd0a9c3f2450ddd00519f63244ac72b507"
+    },
+    {
+      "path": "docs/demo.mp4",
+      "name": "demo.mp4",
+      "content_type": "video/mp4",
+      "sha256": "0859470910068104ed663e694b0495892d1d9a1604966bd17285fe64d5a20cb4"
+    }
+  ]
+}

@@ -23,3 +23,5 @@ The demo records actual local interactions with fictional inputs. Cursor movemen
 See [Credits and source references](CREDITS.md) for the upstream tools, libraries and fonts used, and details of the workflow recording.
 
 [Download the full-motion recording](docs/demo.mp4).
+
+[Try the demo and a practical exercise](docs/QUICKSTART.md).

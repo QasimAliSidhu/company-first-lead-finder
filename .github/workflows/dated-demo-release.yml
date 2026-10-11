@@ -1,0 +1,34 @@
+name: Dated public demo release
+"on":
+  schedule:
+    - cron: '47 13 12 10 *'
+  workflow_dispatch:
+    inputs:
+      validate_only:
+        description: Validate reviewed assets without publishing
+        type: boolean
+        default: true
+permissions:
+  contents: write
+concurrency:
+  group: dated-public-demo-release
+  cancel-in-progress: false
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Fetch the current public source archive
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SOURCE_REPO: ${{ github.repository }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          curl --fail --silent --show-error --location --retry 3 --header "Authorization: Bearer $GH_TOKEN" "https://api.github.com/repos/$SOURCE_REPO/tarball/$SOURCE_SHA" --output source.tar.gz
+          mkdir source
+          tar -xzf source.tar.gz --strip-components=1 -C source
+      - name: Validate or publish this dated demo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ONLY: ${{ github.event_name == 'workflow_dispatch' && inputs.validate_only && 'true' || 'false' }}
+        run: python3 source/scripts/publish_demo_release.py
